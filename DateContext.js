@@ -8,6 +8,8 @@ const DateProvider = ({ children }) => {
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
   const [emailId, setEmailId] = useState("");
+  const [phoneNo, setPhoneNo] = useState("");
+  const [name, setName] = useState("");
   return (
     <DateContext.Provider
       value={{
@@ -21,6 +23,10 @@ const DateProvider = ({ children }) => {
         setClientInfoDone,
         emailId,
         setEmailId,
+        phoneNo,
+        setPhoneNo,
+        name,
+        setName,
       }}
     >
       {children}

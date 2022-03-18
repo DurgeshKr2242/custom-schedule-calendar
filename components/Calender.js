@@ -108,11 +108,11 @@ const Calender = () => {
             </p>
             <div className="flex gap-2">
               <BiChevronRight
-                className="bg-[#DEEBFF] text-[#1F86FF]  rounded-md px-1 text-2xl rotate-180"
+                className="cursor-pointer bg-[#DEEBFF] text-[#1F86FF]  rounded-md px-1 text-2xl rotate-180"
                 onClick={previousHandler}
               />
               <BiChevronRight
-                className="bg-[#DEEBFF] text-[#1F86FF] rounded-md px-1 text-2xl"
+                className="cursor-pointer bg-[#DEEBFF] text-[#1F86FF] rounded-md px-1 text-2xl"
                 onClick={nextHandler}
               />
             </div>
