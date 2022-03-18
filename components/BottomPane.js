@@ -10,6 +10,7 @@ const BottomPane = () => {
     selectedTime,
     dateSelectionStatus,
     setDateSelectionStatus,
+    setClientInfoDone,
   } = useGlobalDateContext();
 
   return (
@@ -48,7 +49,10 @@ const BottomPane = () => {
           </button>
         )
       ) : (
-        <button className="bg-[#1F86FF] text-white px-5 rounded-lg py-2 text-sm">
+        <button
+          onClick={() => setClientInfoDone(true)}
+          className="bg-[#1F86FF] text-white px-5 rounded-lg py-2 text-sm"
+        >
           Schedule Demo
         </button>
       )}

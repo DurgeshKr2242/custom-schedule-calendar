@@ -3,10 +3,11 @@ import React, { useEffect, useState, useContext } from "react";
 const DateContext = React.createContext();
 
 const DateProvider = ({ children }) => {
+  const [dateSelectionStatus, setDateSelectionStatus] = useState(false);
+  const [clientInfoDone, setClientInfoDone] = useState(false);
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
-  const [dateSelectionStatus, setDateSelectionStatus] = useState(false);
-
+  const [emailId, setEmailId] = useState("");
   return (
     <DateContext.Provider
       value={{
@@ -16,6 +17,10 @@ const DateProvider = ({ children }) => {
         setSelectedTime,
         dateSelectionStatus,
         setDateSelectionStatus,
+        clientInfoDone,
+        setClientInfoDone,
+        emailId,
+        setEmailId,
       }}
     >
       {children}

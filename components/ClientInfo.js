@@ -1,6 +1,8 @@
 import React from "react";
-
+import { useGlobalDateContext } from "../DateContext";
 const ClientInfo = () => {
+  const { emailId, setEmailId, clientInfoDone, setClientInfoDone } =
+    useGlobalDateContext();
   return (
     <div className="flex flex-col items-start gap-2 px-5 min-w-[350px] ">
       <p className="text-sm font-semibold text-gray-400">
@@ -29,6 +31,8 @@ const ClientInfo = () => {
             Your work e-mail address
           </label>
           <input
+            value={emailId}
+            onChange={(e) => setEmailId(e.target.value)}
             className="w-full px-4 py-2 text-sm font-semibold text-gray-600 border-2 rounded-md focus:outline-none focus:ring-2 focus:border-0 focus:ring-[#1F86FF]"
             type="text"
             id="email"
