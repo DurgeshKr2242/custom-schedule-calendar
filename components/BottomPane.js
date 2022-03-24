@@ -19,14 +19,14 @@ const BottomPane = () => {
         <button
           disabled
           onClick={() => setDateSelectionStatus(false)}
-          className="flex items-center gap-1 font-[500] bg-[#DEEBFF]/50 px-5 rounded-lg py-2 text-sm text-[#1F86FF]"
+          className="flex items-center gap-1 font-bold bg-[#DEEBFF]/50 px-7 rounded-[4px] py-2 text-sm text-[#3B82F6]"
         >
           <MdKeyboardBackspace /> Back
         </button>
       ) : (
         <button
           onClick={() => setDateSelectionStatus(false)}
-          className="flex items-center gap-1 font-[500] bg-[#DEEBFF] px-5 rounded-lg py-2 text-sm text-[#1F86FF]"
+          className="flex items-center gap-1 font-bold bg-[#DEEBFF] px-7 rounded-[4px] py-2 text-sm text-[#3B82F6]"
         >
           <MdKeyboardBackspace /> Back
         </button>
@@ -36,14 +36,14 @@ const BottomPane = () => {
         selectedDate == "" || selectedTime == "" ? (
           <button
             disabled
-            className="bg-[#1F86FF]/50 text-white px-5 rounded-lg py-2 text-sm"
+            className="bg-[#3B82F6]/50 font-bold text-white px-7 rounded-[4px] py-2 text-sm"
           >
             Next Step
           </button>
         ) : (
           <button
             onClick={() => setDateSelectionStatus(true)}
-            className="bg-[#1F86FF] text-white px-5 rounded-lg py-2 text-sm"
+            className="bg-[#3B82F6] font-bold text-white px-7 rounded-[4px] py-2 text-sm"
           >
             Next Step
           </button>
@@ -51,7 +51,7 @@ const BottomPane = () => {
       ) : (
         <button
           onClick={() => setClientInfoDone(true)}
-          className="bg-[#1F86FF] text-white px-5 rounded-lg py-2 text-sm"
+          className="bg-[#3B82F6] font-bold text-white px-7 rounded-[4px] py-2 text-sm"
         >
           Schedule Demo
         </button>

@@ -45,9 +45,6 @@ const displayTime = [
   "19:30",
 ];
 
-// let startTime = 9;
-// const endTime = 21;
-
 const Calender = () => {
   const { setSelectedDate, setSelectedTime } = useGlobalDateContext();
 
@@ -76,8 +73,6 @@ const Calender = () => {
   const nextHandler = () => {
     if (month < 11) {
       setMonth(month + 1);
-
-      // month++;
     }
     if (month == 11) {
       setYear(year + 1);
@@ -103,16 +98,16 @@ const Calender = () => {
       <div className="flex gap-0">
         <div>
           <div className="flex items-center justify-between w-full">
-            <p className="text-xl font-semibold">
+            <p className="text-lg font-semibold">
               {monthMap[month]} {year}
             </p>
             <div className="flex gap-2">
               <BiChevronRight
-                className="cursor-pointer bg-[#DEEBFF] text-[#1F86FF]  rounded-md px-1 text-2xl rotate-180"
+                className="cursor-pointer bg-[#DEEBFF] text-[#3B82F6]  rounded-md px-1 text-3xl rotate-180"
                 onClick={previousHandler}
               />
               <BiChevronRight
-                className="cursor-pointer bg-[#DEEBFF] text-[#1F86FF] rounded-md px-1 text-2xl"
+                className="cursor-pointer bg-[#DEEBFF] text-[#3B82F6] rounded-md px-1 text-3xl"
                 onClick={nextHandler}
               />
             </div>
@@ -155,9 +150,9 @@ const Calender = () => {
                         setSelectedDateIndex(i);
                       }}
                       key={i}
-                      className={` w-12 py-3 text-sm font-semibold text-center align-text-top rounded-md cursor-pointer   hover:text-white hover:bg-[#4B82E1] ${
+                      className={` w-12 py-3 text-sm font-semibold text-center align-text-top rounded-md cursor-pointer   hover:text-white hover:bg-[#3B82F6] ${
                         selectedDateIndex == i
-                          ? "text-white bg-[#4B82E1]"
+                          ? "text-white bg-[#3B82F6]"
                           : "text-black/50"
                       }`}
                     >
@@ -169,12 +164,10 @@ const Calender = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 max-h-[340px] customScrollbar overflow-y-scroll text-[#1F86FF] mt-10 pb-10 px-5">
-          {/* <div className="flex flex-col gap-2 max-h-[340px] scrollbar scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-300  overflow-y-scroll text-[#1F86FF] mt-10 pb-10 px-5"> */}
+        <div className="flex flex-col gap-2 max-h-[340px] customScrollbar overflow-y-scroll text-[#3B82F6] mt-10 pb-10 px-5">
           {displayTime.map((time, i) => {
             return (
               <p
-                // onClick={(e) => console.log(e.target.textContent)}
                 onClick={(e) => {
                   setSelectedTime(
                     `${e.target.textContent} -
@@ -183,13 +176,12 @@ const Calender = () => {
                     }`
                   );
                   setSelectedTimeIndex(i);
-                  // console.log(e.target.textContent.split(":")[1]);
                 }}
                 key={time}
-                className={` px-6 py-1 text-sm font-[500] text-center align-text-top border-2 rounded-md cursor-pointer   hover:text-white hover:bg-[#4B82E1] ${
+                className={` px-6 py-1 text-sm font-[500] text-center align-text-top border-2 rounded-md cursor-pointer   hover:text-white hover:bg-[#3B82F6] ${
                   selectedTimeIndex == i
-                    ? "text-white bg-[#4B82E1]"
-                    : "text-[#1F86FF]"
+                    ? "text-white bg-[#3B82F6]"
+                    : "text-[#3B82F6]"
                 }`}
               >
                 {time}

@@ -6,7 +6,7 @@ const Success = () => {
   const { selectedDate, selectedTime, emailId } = useGlobalDateContext();
   return (
     <div className="flex flex-col items-center justify-center gap-8 py-8 min-w-[498px] min-h-[408px] h-full">
-      <div className="rounded-full bg-[#DEEBFF] text-[#1F86FF] p-3 text-lg">
+      <div className="rounded-full bg-[#DEEBFF] text-[#3B82F6] p-3 text-lg">
         <FaCheck />
       </div>
       <div className="flex flex-col items-center justify-center w-full gap-3">
@@ -38,10 +38,10 @@ const Success = () => {
       </div>
 
       <div className="flex flex-col gap-2">
-        <button className="bg-[#1F86FF] text-white px-5 rounded-lg py-2 text-sm font-[500]">
+        <button className="bg-[#3B82F6] text-white px-5 rounded-lg py-2 text-sm font-[500]">
           Get Back Home
         </button>
-        <button className="text-[#1F86FF] px-5 rounded-lg py-2 text-sm font-[500]">
+        <button className="text-[#3B82F6] px-5 rounded-lg py-2 text-sm font-[500]">
           Resend Email
         </button>
       </div>

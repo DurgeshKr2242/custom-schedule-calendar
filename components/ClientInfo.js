@@ -56,7 +56,7 @@ const ClientInfo = () => {
       <div className="flex flex-col w-full gap-4 pr-20 mt-4 text-sm font-semibold">
         <div className="relative flex flex-col gap-2">
           <label className="text-sm font-semibold text-gray-600" htmlFor="name">
-            Your name
+            Your Full Name
           </label>
           <input
             value={name}
@@ -64,7 +64,7 @@ const ClientInfo = () => {
             className="w-full px-4 py-2 text-sm font-semibold text-gray-600 border-2 rounded-md  focus:outline-none focus:ring-2 focus:border-0 focus:ring-[#1F86FF]"
             type="text"
             id="name"
-            placeholder="Please enter your full name"
+            placeholder="Enter Your Full Name"
           />
           {name.length > 4 && (
             <div className="rounded-full bg-[#DEEBFF]/70 text-green-500 p-1 absolute right-2 top-[55%] text-xs">
@@ -77,7 +77,7 @@ const ClientInfo = () => {
             className="text-sm font-semibold text-gray-600"
             htmlFor="email"
           >
-            Your work e-mail address
+            Your Email Address
           </label>
           <input
             value={emailId}
@@ -85,7 +85,7 @@ const ClientInfo = () => {
             className="w-full px-4 py-2 text-sm font-semibold text-gray-600 border-2 rounded-md focus:outline-none focus:ring-2 focus:border-0 focus:ring-[#1F86FF]"
             type="text"
             id="email"
-            placeholder="Please enter your e-mail address"
+            placeholder="Enter Your Email Address"
           />
           {validEmail && (
             <div className="rounded-full bg-[#DEEBFF]/70 text-green-500 p-1 absolute right-2 top-[55%] text-xs">
@@ -98,7 +98,7 @@ const ClientInfo = () => {
             className="text-sm font-semibold text-gray-600"
             htmlFor="number"
           >
-            Phone number
+            Password
           </label>
           <input
             value={phoneNo}
@@ -106,7 +106,7 @@ const ClientInfo = () => {
             className="w-full px-4 py-2 text-sm font-semibold text-gray-600 border-2 rounded-md focus:outline-none focus:ring-2 focus:border-0 focus:ring-[#1F86FF]"
             type="tel"
             id="number"
-            placeholder="Please enter phone number"
+            placeholder="Enter Password"
           />
           {validPhone && (
             <div className="rounded-full bg-[#DEEBFF]/70 text-green-500 p-1 absolute right-2 top-[55%] text-xs">
