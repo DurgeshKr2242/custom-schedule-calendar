@@ -89,6 +89,7 @@ const Calender = () => {
       setMonth(11);
     }
   };
+  console.log(today.getDay(), today.getMonth());
 
   return (
     <div className="flex flex-col items-start gap-2 px-5 max-h-[340px]">
@@ -150,7 +151,11 @@ const Calender = () => {
                         setSelectedDateIndex(i);
                       }}
                       key={i}
-                      className={` w-12 py-3 text-sm font-semibold text-center align-text-top rounded-md cursor-pointer   hover:text-white hover:bg-[#3B82F6] ${
+                      className={`${
+                        month == today.getMonth() &&
+                        i == today.getDate() - 1 &&
+                        "bg-[#3B82F6]/60 text-white"
+                      } w-12 py-3 text-sm font-semibold text-center align-text-top rounded-md cursor-pointer   hover:text-white hover:bg-[#3B82F6] ${
                         selectedDateIndex == i
                           ? "text-white bg-[#3B82F6]"
                           : "text-black/50"
