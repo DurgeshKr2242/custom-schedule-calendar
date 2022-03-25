@@ -104,11 +104,11 @@ const Calender = () => {
             </p>
             <div className="flex gap-2">
               <BiChevronRight
-                className="cursor-pointer bg-[#DEEBFF] text-[#3B82F6]  rounded-md px-1 text-3xl rotate-180"
+                className="cursor-pointer bg-[#DEEBFF] text-[#1a73e8]  rounded-md px-1 text-3xl rotate-180"
                 onClick={previousHandler}
               />
               <BiChevronRight
-                className="cursor-pointer bg-[#DEEBFF] text-[#3B82F6] rounded-md px-1 text-3xl"
+                className="cursor-pointer bg-[#DEEBFF] text-[#1a73e8] rounded-md px-1 text-3xl"
                 onClick={nextHandler}
               />
             </div>
@@ -151,14 +151,17 @@ const Calender = () => {
                         setSelectedDateIndex(i);
                       }}
                       key={i}
-                      className={`${
+                      className={` w-12 py-3 text-sm font-semibold text-center align-text-top rounded-md cursor-pointer   hover:text-white hover:bg-[#1a73e8] ${
+                        selectedDateIndex == i
+                          ? "text-white bg-[#1a73e8]"
+                          : month == today.getMonth() &&
+                            i == today.getDate() - 1
+                          ? "text-[#1a73e8]"
+                          : "text-black/50"
+                      } ${
                         month == today.getMonth() &&
                         i == today.getDate() - 1 &&
-                        "bg-[#3B82F6]/60 text-white"
-                      } w-12 py-3 text-sm font-semibold text-center align-text-top rounded-md cursor-pointer   hover:text-white hover:bg-[#3B82F6] ${
-                        selectedDateIndex == i
-                          ? "text-white bg-[#3B82F6]"
-                          : "text-black/50"
+                        "bg-[#1a73e8]/10 "
                       }`}
                     >
                       {i + 1}
@@ -169,7 +172,7 @@ const Calender = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2 max-h-[340px] customScrollbar overflow-y-scroll text-[#3B82F6] mt-10 pb-10 px-5">
+        <div className="flex flex-col gap-2 max-h-[340px] customScrollbar overflow-y-scroll text-[#1a73e8] mt-10 pb-10 px-5">
           {displayTime.map((time, i) => {
             return (
               <p
@@ -183,10 +186,10 @@ const Calender = () => {
                   setSelectedTimeIndex(i);
                 }}
                 key={time}
-                className={` px-6 py-1 text-sm font-[500] text-center align-text-top border-2 rounded-md cursor-pointer   hover:text-white hover:bg-[#3B82F6] ${
+                className={` px-6 py-1 text-sm font-[500] text-center align-text-top border-2 rounded-md cursor-pointer   hover:text-white hover:bg-[#1a73e8] ${
                   selectedTimeIndex == i
-                    ? "text-white bg-[#3B82F6]"
-                    : "text-[#3B82F6]"
+                    ? "text-white bg-[#1a73e8]"
+                    : "text-[#1a73e8]"
                 }`}
               >
                 {time}

@@ -11,7 +11,7 @@ const LeftPane = () => {
       <div className="flex flex-col items-start gap-2">
         <p className="text-sm font-[500] text-gray-400/90">Walkthrough</p>
         <p className="text-xl font-bold">Schedule a Demo</p>
-        <p className="flex justify-center items-center gap-1 bg-[#DEEBFF] text-[14px] px-2 py-1 font-semibold rounded-md text-[#1F86FF]">
+        <p className="flex justify-center items-center gap-1 bg-[#DEEBFF] text-[14px] px-2 py-1 font-semibold rounded-md text-[#1a73e8]">
           <FcClock /> 10-20mins
         </p>
       </div>

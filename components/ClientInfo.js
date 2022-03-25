@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useGlobalDateContext } from "../DateContext";
 import { FaCheck } from "react-icons/fa";
+import Input from "./common/Input";
 const ClientInfo = () => {
   const {
     emailId,
@@ -55,7 +56,16 @@ const ClientInfo = () => {
       </div>
       <div className="flex flex-col w-full gap-4 pr-20 mt-4 text-sm font-semibold">
         <div className="relative flex flex-col gap-2">
-          <label className="text-sm font-semibold text-gray-600" htmlFor="name">
+          <Input
+            label="Your Full Name"
+            name="name"
+            handleChange={(e) => setName(e.target.value)}
+            value={name}
+            required
+            placeholder="Enter Your Full Name"
+            type="text"
+          />
+          {/* <label className="text-sm font-semibold text-gray-600" htmlFor="name">
             Your Full Name
           </label>
           <input
@@ -65,7 +75,7 @@ const ClientInfo = () => {
             type="text"
             id="name"
             placeholder="Enter Your Full Name"
-          />
+          /> */}
           {name.length > 4 && (
             <div className="rounded-full bg-[#DEEBFF]/70 text-green-500 p-1 absolute right-2 top-[55%] text-xs">
               <FaCheck />
@@ -73,7 +83,16 @@ const ClientInfo = () => {
           )}
         </div>
         <div className="relative flex flex-col gap-2 ">
-          <label
+          <Input
+            label="Your Email Address"
+            name="email"
+            handleChange={(e) => setEmailId(e.target.value)}
+            value={emailId}
+            required
+            placeholder="Enter Your Email Address"
+            type="email"
+          />
+          {/* <label
             className="text-sm font-semibold text-gray-600"
             htmlFor="email"
           >
@@ -86,7 +105,7 @@ const ClientInfo = () => {
             type="text"
             id="email"
             placeholder="Enter Your Email Address"
-          />
+          /> */}
           {validEmail && (
             <div className="rounded-full bg-[#DEEBFF]/70 text-green-500 p-1 absolute right-2 top-[55%] text-xs">
               <FaCheck />
@@ -94,7 +113,16 @@ const ClientInfo = () => {
           )}
         </div>
         <div className="relative flex flex-col gap-2 ">
-          <label
+          <Input
+            label="Phone Number"
+            name="phone"
+            handleChange={(e) => setPhoneNo(e.target.value)}
+            value={phoneNo}
+            required
+            placeholder="Enter Your Phone Number"
+            type="tel"
+          />
+          {/* <label
             className="text-sm font-semibold text-gray-600"
             htmlFor="number"
           >
@@ -107,7 +135,7 @@ const ClientInfo = () => {
             type="tel"
             id="number"
             placeholder="Enter Password"
-          />
+          /> */}
           {validPhone && (
             <div className="rounded-full bg-[#DEEBFF]/70 text-green-500 p-1 absolute right-2 top-[55%] text-xs">
               <FaCheck />
