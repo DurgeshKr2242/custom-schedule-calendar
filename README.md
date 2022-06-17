@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Custom Schedule Calender 👋
 
-## Getting Started
+SUBS (short for Subscription) is a progressive web app that lets you track all your subscriptions.
+You can even keep a track of all the people you shared your subscriptions with.
 
-First, run the development server:
+## Deployed
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The project is deployed on vercel: https://custom-schedule-calendar.vercel.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Github Repo Link : https://github.com/DurgeshKr2242/custom-schedule-calendar
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Custom calender component from scratch. No external libraries are used.
+- Seperate section to choose specific time span for demo.
+- Input validation for Name, Email and Password field. (Note: Any validation can be used. Here I have used standard regex validation for email and password.)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 💻 Tech Stack
 
-## Learn More
+**Client:** ES6+, ReactJS, NextJs, Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+<!-- ## ✨ Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+https://drive.google.com/file/d/1GnJTQ_WU9rqdMb53LjkYeZk0-rUVY1zv/view?usp=sharing -->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Screenshots
 
-## Deploy on Vercel
+![Select Date and Time](https://imgur.com/a/JXq59vF)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Personal Information](https://imgur.com/b5OkZep)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Demo Scheduled](https://imgur.com/XKno5jP)
+
+<!-- ![Auth Page](https://firebasestorage.googleapis.com/v0/b/pashubazzar-4ba5c.appspot.com/o/SUBS%20Images%2FauhSS.png?alt=media&token=d16f46d6-e6e2-4333-9a13-f32378b9fc17) -->
+
+## Badges
+
+<!-- Add badges from somewhere like: [shields.io](https://shields.io/) -->
+
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+## Authors
+
+If you have any feedback, please reach out to me at code.durgesh@gmail.com or,
+
+- Github : [@DurgeshKr2242](https://github.com/DurgeshKr2242)
+- LinkedIn : [@Durgesh Kumar](https://www.linkedin.com/in/durgesh-kr/)
+- Twitter : [@Durgesh2242](https://twitter.com/Durgesh2242)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
