@@ -1,7 +1,6 @@
 # Custom Schedule Calender 👋
 
-SUBS (short for Subscription) is a progressive web app that lets you track all your subscriptions.
-You can even keep a track of all the people you shared your subscriptions with.
+This is a Custom Schedul Calender component for booking a demo. Here we can select a date and time then fill our personal information and book our demo. This project is mainly displaying the custom calender component which I have made from scratch without using any external librery, using purely logic and ofcours javascript. This data is not stored anywhere and this project is only for demo purpose.  
 
 ## Deployed
 
@@ -25,11 +24,11 @@ https://drive.google.com/file/d/1GnJTQ_WU9rqdMb53LjkYeZk0-rUVY1zv/view?usp=shari
 
 ## Screenshots
 
-![Select Date and Time](https://imgur.com/a/JXq59vF)
+![Select Date and Time](https://firebasestorage.googleapis.com/v0/b/pashubazzar-4ba5c.appspot.com/o/Custom%20calender%20images%2FScreen%201.png?alt=media&token=0f8051e6-9f62-47b1-b000-70e9193d0b5f)
 
-![Personal Information](https://imgur.com/b5OkZep)
+![Personal Information](https://firebasestorage.googleapis.com/v0/b/pashubazzar-4ba5c.appspot.com/o/Custom%20calender%20images%2FScreen%202.png?alt=media&token=b3c3abc3-55d8-4b1e-aa56-70fc3e18eaf0)
 
-![Demo Scheduled](https://imgur.com/XKno5jP)
+![Demo Scheduled](https://firebasestorage.googleapis.com/v0/b/pashubazzar-4ba5c.appspot.com/o/Custom%20calender%20images%2FScreen%203.png?alt=media&token=1366082d-5996-4019-877c-f591952618ab)
 
 <!-- ![Auth Page](https://firebasestorage.googleapis.com/v0/b/pashubazzar-4ba5c.appspot.com/o/SUBS%20Images%2FauhSS.png?alt=media&token=d16f46d6-e6e2-4333-9a13-f32378b9fc17) -->
 
